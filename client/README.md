@@ -34,6 +34,9 @@ http://localhost:3000
 ### `npm run lint`
 Check for lint errors.
 
+### npm run lint:fix
+Fix lint errors.
+
 ### `npm run export`
 Export the static website.
 
