@@ -39,7 +39,7 @@ The following dependecies are used for this project. Feel free to experiment usi
 
 > **NOTE:** Requires Docker installed on the development machine.
 
-1. Navogate the the repository's root directory from the commandline.
+1. Navigate the the repository's root directory from the commandline.
 2. Run: `docker compose up`
 
 @weaponsforge<br>
