@@ -1,4 +1,4 @@
-## react-hooks-client
+## react-hooks-playground
 
 A React (NextJS) playground for testing using react hooks.
 
