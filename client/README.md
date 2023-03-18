@@ -1,4 +1,4 @@
-## react-hooks-playground
+## react-hooks-playground/client
 
 A React (NextJS) playground for testing using react hooks.
 
@@ -25,7 +25,21 @@ The following dependecies are used for this project. Feel free to experiment usi
 1. Clone this repository.<br>
 `https://github.com/weaponsforge/react-hooks-playground.git`
 
-2. Follow the instructions on the README files inside the `/client` directory for more information on configuring and using the NextJS client app.
+## Available Scripts
+
+### `npm run dev`
+Run the project in development mode. Launch the development website from:<br>
+http://localhost:3000
+
+### `npm run lint`
+Check for lint errors.
+
+### `npm run export`
+Export the static website.
+
+### `npm start`
+Load the static website built from npm run export (no hot reloads). View the built website on:<br>
+http://localhost:3000
 
 @weaponsforge<br>
 20230319
