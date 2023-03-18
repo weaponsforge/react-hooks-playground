@@ -40,7 +40,14 @@ The following dependecies are used for this project. Feel free to experiment usi
 > **NOTE:** Requires Docker installed on the development machine.
 
 1. Navigate the the repository's root directory from the commandline.
-2. Run: `docker compose up`
+2. Run the docker compose commands:<br>
+   ```
+   # Build the image
+   docker compose build
+
+   # Start/stop the docker image
+   docker compose up/down
+   ```
 
 @weaponsforge<br>
 20230319
