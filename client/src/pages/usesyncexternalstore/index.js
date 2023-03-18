@@ -1,15 +1,7 @@
-import HeadComponent from '@/common/layout/head'
+import UseSyncExternalStoreComponent from '@/components/usesyncexternalstore'
 
-function useSyncExternalStoreContainer () {
-  return (
-    <>
-      <HeadComponent />
-
-      <h2>
-        useSyncExternalStoreContainer
-      </h2>
-    </>
-  )
+function UseSyncExternalStore () {
+  return (<UseSyncExternalStoreComponent />)
 }
 
-export default useSyncExternalStoreContainer
+export default UseSyncExternalStore
