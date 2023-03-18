@@ -1,38 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## react-hooks-playground/client
 
-## Getting Started
+A React (NextJS) playground for testing using react hooks.
 
-First, run the development server:
+## Requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The following dependecies are used for this project. Feel free to experiment using other dependencies and versions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Windows 64-bit OS
+2. nvm version 1.1.9 (for Windows)
+   - NOTE: Using nvm is optional if you want to continue using your pre-installed NodeJS.
+3. NodeJS LTS v18.14.2 installed using nvm
+   - node v18.14.2
+   - npm v9.5.0
+   - > **NOTE:** We will use v18.14.2 for the official production client and server builds but feel free to use other NodeJS versions by setting "engine-strict=false" in the .npmrc file when working on localhost development as needed, but please use v18.14.2 when installing new modules. Do not commit the package.json or package-lock.json files should they change when "engine-strict=false".
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Core Libraries and Frameworks
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Client app
+   - NextJS 13.2.4
+   - React 18.2.0
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone this repository.<br>
+`https://github.com/weaponsforge/react-hooks-playground.git`
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+### `npm run dev`
+Run the project in development mode. Launch the development website from:<br>
+http://localhost:3000
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `npm run lint`
+Check for lint errors.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### `npm run export`
+Export the static website.
 
-## Deploy on Vercel
+### `npm start`
+Load the static website built from npm run export (no hot reloads). View the built website on:<br>
+http://localhost:3000
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+@weaponsforge<br>
+20230319
