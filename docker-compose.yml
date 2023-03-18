@@ -1,0 +1,23 @@
+version: "3"
+services:
+  # NextJS v13 app running on development mode
+  react-hooks-playground-client-dev:
+    container_name: react-hooks-playground-client-dev
+    image: weaponsforge/react-hooks-playground-client:dev
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+      target: development
+    networks:
+      - react-hooks-playground-dev
+    volumes:
+      - ./client:/opt/client
+      - /opt/client/node_modules
+      - /opt/client/.next
+    ports:
+      - "3000:3000"
+
+networks:
+  react-hooks-playground-dev:
+    name: react-hooks-playground-dev
+    external: false

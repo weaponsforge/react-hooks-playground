@@ -27,5 +27,20 @@ The following dependecies are used for this project. Feel free to experiment usi
 
 2. Follow the instructions on the README files inside the `/client` directory for more information on configuring and using the NextJS client app.
 
+## Quick Usage Guide
+
+### Manual Installation and Usage
+
+1. Navigate to the **/client** directory from the commandline.
+2. Run: `npm run install`
+3. Run: `npm run dev`
+
+### Localhost Development Using Docker
+
+> **NOTE:** Requires Docker installed on the development machine.
+
+1. Navogate the the repository's root directory from the commandline.
+2. Run: `docker compose up`
+
 @weaponsforge<br>
 20230319
