@@ -1,3 +1,7 @@
+// Notes:
+// https://redux.js.org/tutorials/essentials/part-6-performance-normalization#normalized-state-structure
+// https://redux.js.org/tutorials/essentials/part-6-performance-normalization#optimizing-the-posts-list
+
 import {
   createSlice,
   createEntityAdapter
@@ -8,10 +12,12 @@ const STATES = {
   PENDING: 'pending'
 }
 
+// Entiti adapter
 const todosAdapter = createEntityAdapter({
   selectId: (todo) => todo.id
 })
 
+// Slice
 const todoSlice = createSlice({
   name: 'todos',
   initialState: todosAdapter.getInitialState({

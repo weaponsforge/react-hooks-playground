@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 import Page from '@/common/layout/page'
+import Card from '@/common/ui/card'
+import TodoListComponent from '@/domain/redux/todolist'
 
 function ReduxComponent ({
-  todos,
   addTodo,
   deleteTodo
 }) {
@@ -17,20 +18,19 @@ function ReduxComponent ({
         Add Todo
       </button>
 
-      <ul style={{ marginTop: '24px' }}>
-        {(todos).map(((item, id) => (
-          <li key={id}>
-            <span>id: {item.id}, {item.text}</span>
-            <span>
-              <button onClick={() => deleteTodo(item.id)}>
-                [ x ]
-              </button>
-            </span>
-          </li>
-        )))}
-      </ul>
+      <TodoListComponent deleteTodo={deleteTodo} />
+      <br />
+
+      <Card>
+        hello
+      </Card>
     </Page>
   )
+}
+
+ReduxComponent.propTypes = {
+  addTodo: PropTypes.func,
+  deleteTodo: PropTypes.func
 }
 
 export default ReduxComponent
