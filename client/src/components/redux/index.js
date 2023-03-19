@@ -13,7 +13,7 @@ function ReduxComponent ({
         Redux Toolkit
       </h2>
 
-      <p>Testing rendering data from a redux store inside a deeply-nested component.</p>
+      <p> Testing page re-renders and data rendering from a redux store inside a deeply-nested component.</p>
 
       <button onClick={addTodo}
         style={{ marginTop: '24px' }}>

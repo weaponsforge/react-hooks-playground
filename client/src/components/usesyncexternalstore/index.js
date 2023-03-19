@@ -10,8 +10,19 @@ function UseSyncExternalStoreComponent ({
   return (
     <Page>
       <h2>
-        UseSyncExternalStoreComponent
+        useSyncExternalStore
       </h2>
+
+      <p>
+        Testing page re-renders and data rendering from a global variable set by useSyncExternalStore inside a deeply-nested component.
+      </p>
+      <br /><br />
+
+      <button onClick={() => addTodo()}>
+        Add Todo
+      </button>
+
+      <br /><br />
 
       <Card>
         <Card>
@@ -29,11 +40,7 @@ function UseSyncExternalStoreComponent ({
         </Card>
       </Card>
 
-      <button onClick={() => addTodo()}>
-        Add Todo
-      </button>
-
-      <br /><br />
+      <br />
 
       <Card>
         Hello
