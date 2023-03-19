@@ -1,10 +1,10 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+
+  height: 100vh;
+  display: grid;
+  place-content: center;
   padding: 6rem;
-  min-height: 100vh;
+
 }
 
 .description {
@@ -16,6 +16,7 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+  margin: auto;
 }
 
 .description a {
@@ -70,6 +71,11 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+}
+
+.h2 {
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .center {
