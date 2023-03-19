@@ -13,12 +13,30 @@ function ReduxComponent ({
         Redux Toolkit
       </h2>
 
+      <p>Testing rendering data from a redux store inside a deeply-nested component.</p>
+
       <button onClick={addTodo}
         style={{ marginTop: '24px' }}>
         Add Todo
       </button>
 
-      <TodoListComponent deleteTodo={deleteTodo} />
+      <br /><br />
+
+      {/** A deeply-nested component */}
+      <Card>
+        <Card>
+          <Card>
+            <Card>
+              <Card>
+                <Card>
+                  <TodoListComponent deleteTodo={deleteTodo} />
+                </Card>
+              </Card>
+            </Card>
+          </Card>
+        </Card>
+      </Card>
+
       <br />
 
       <Card>
