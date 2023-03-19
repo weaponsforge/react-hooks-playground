@@ -33,7 +33,9 @@ export default function useTodos () {
 
 /**
  * The external store with available useSyncExternalStore-required methods:
- * subscribe() - Used and initialized internally by useSyncExternalStore
+ * subscribe()
+ *    - Used and initialized internally by useSyncExternalStore for subscribing to external store events.
+ *    - This should return a clean-up function like in useEffect() with empty dependency arrays.
  * getSnapshot() - Returns the current (full) snapshot of the global data variable
  * getServerSnapshot() - Used in SSR
  */
