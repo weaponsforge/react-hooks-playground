@@ -10,42 +10,42 @@ import {
 import { STATES } from '@/lib/store/constants'
 
 // Entiti adapter
-const todosAdapter = createEntityAdapter({
-  selectId: (todo) => todo.id
+const usersAdapter = createEntityAdapter({
+  selectId: (user) => user.id
 })
 
 // Slice
-const todoSlice = createSlice({
-  name: 'todos',
-  initialState: todosAdapter.getInitialState({
+const usersSlice = createSlice({
+  name: 'users',
+  initialState: usersAdapter.getInitialState({
     loading: STATES.IDLE,
     error: '',
     success: '',
     todo: null
   }),
   reducers: {
-    todoReceived (state, action) {
+    userReceived (state, action) {
       const id = Math.random().toString(36).substring(2, 8)
 
       state.loading = STATES.IDLE
       state.todo = { ...action.payload, id }
-      todosAdapter.addOne(state, state.todo)
+      usersAdapter.addOne(state, state.todo)
 
     },
-    todoDelete (state, action) {
-      todosAdapter.removeOne(state, action.payload)
+    userDelete (state, action) {
+      usersAdapter.removeOne(state, action.payload)
     },
-    todosReceived (state, action) {
+    usersReceived (state, action) {
       state.loading = STATES.IDLE
-      todosAdapter.setAll(state, action.payload)
+      usersAdapter.setAll(state, action.payload)
     }
   }
 })
 
 export const {
-  todoReceived,
-  todosReceived,
-  todoDelete
-} = todoSlice.actions
+  userReceived,
+  usersReceived,
+  userDelete
+} = usersSlice.actions
 
-export default todoSlice.reducer
+export default usersSlice.reducer
