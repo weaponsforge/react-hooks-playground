@@ -1,7 +1,9 @@
 import UseSyncExternalStoreComponent from '@/components/usesyncexternalstore'
 
 function UseSyncExternalStore () {
-  return (<UseSyncExternalStoreComponent />)
+  return (
+    <UseSyncExternalStoreComponent />
+  )
 }
 
 export default UseSyncExternalStore
