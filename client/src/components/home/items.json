@@ -6,5 +6,9 @@
   {
     "name": "redux toolkit",
     "link": "/redux"
+  },
+  {
+    "name": "useState",
+    "link": "/usestate"
   }
 ]

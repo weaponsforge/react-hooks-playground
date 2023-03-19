@@ -4,7 +4,9 @@ import { store } from '@/store/store'
 import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
-  return <Provider store={store}>
-    <Component {...pageProps} />
-  </Provider>
+  return (
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
+  )
 }
