@@ -13,9 +13,21 @@ function UseSyncExternalStoreComponent ({
         UseSyncExternalStoreComponent
       </h2>
 
-      <TodoListComponentV2
-        deleteTodo={deleteTodo}
-      />
+      <Card>
+        <Card>
+          <Card>
+            <Card>
+              <Card>
+                <Card>
+                  <TodoListComponentV2
+                    deleteTodo={deleteTodo}
+                  />
+                </Card>
+              </Card>
+            </Card>
+          </Card>
+        </Card>
+      </Card>
 
       <button onClick={() => addTodo()}>
         Add Todo
