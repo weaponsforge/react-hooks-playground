@@ -15,13 +15,19 @@ export default function useTodos () {
 
   return {
     todos,
-    add: todoStore.addTodo
+    addTodo: todoStore.addTodo,
+    deleteTodo: todoStore.deleteTodo
   }
 }
 
 export const todoStore = {
   addTodo () {
     todos = [ ...todos, { id: nextId++, text: 'Todo #' + nextId }]
+    emitChange()
+  },
+
+  deleteTodo (id) {
+    todos = todos.filter(item => item.id !== id)
     emitChange()
   },
 
