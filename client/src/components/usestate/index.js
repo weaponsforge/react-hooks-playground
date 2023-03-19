@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import Card from '@/common/ui/card'
 import Page from '@/common/layout/page'
+
 import TodoListComponentV3 from '@/domain/usestate/todolist'
+import TodoListComponentFull from '@/domain/usestate/todolistfull'
 
 function UseStateComponent () {
   const [state, setState] = useState([])
@@ -35,6 +37,10 @@ function UseStateComponent () {
       </button>
       <br /><br />
 
+      <h3>ToDo list state passed from props</h3>
+      <br />
+
+      {/** Renders a list of ToDo items passed from props */}
       <Card>
         <Card>
           <Card>
@@ -46,6 +52,26 @@ function UseStateComponent () {
                     addTodo={addTodo}
                     deleteTodo={deleteTodo}
                   />
+                </Card>
+              </Card>
+            </Card>
+          </Card>
+        </Card>
+      </Card>
+
+      <br /><br />
+
+      <h3>ToDo list state isolated on an inner component</h3>
+      <br />
+
+      {/** Renders a list of ToDo items with all local state inside the TodoListComponentFull component */}
+      <Card>
+        <Card>
+          <Card>
+            <Card>
+              <Card>
+                <Card>
+                  <TodoListComponentFull />
                 </Card>
               </Card>
             </Card>

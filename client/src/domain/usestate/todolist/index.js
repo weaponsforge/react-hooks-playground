@@ -21,6 +21,7 @@ function TodoListComponentV3 ({
 }
 
 TodoListComponentV3.propTypes = {
+  todos: PropTypes.array,
   deleteTodo: PropTypes.func
 }
 
