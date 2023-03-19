@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 import Page from '@/common/layout/page'
+import Card from '@/common/ui/card'
+import TodoListComponentV2 from '@/domain/usesyncexternalstore/todolist'
 
 function UseSyncExternalStoreComponent ({
-  todos,
   addTodo,
   deleteTodo
 }) {
@@ -12,30 +13,26 @@ function UseSyncExternalStoreComponent ({
         UseSyncExternalStoreComponent
       </h2>
 
-      {(todos !== undefined) &&
-      <div>
-        <ul>
-          {todos.map((item, index) => (
-            <li key={index}>
-              <span>{item.text}</span> &nbsp;
-              <span>
-                <button onClick={() => deleteTodo(item.id)}>[ X ]</button>
-              </span>
-            </li>
-          ))}
-        </ul>
-      </div>
-      }
+      <TodoListComponentV2
+        deleteTodo={deleteTodo}
+      />
 
-      <button onClick={() => addTodo()}>Add Todo</button>
+      <button onClick={() => addTodo()}>
+        Add Todo
+      </button>
+
+      <br /><br />
+
+      <Card>
+        Hello
+      </Card>
     </Page>
   )
 }
 
 UseSyncExternalStoreComponent.propTypes = {
-  todos: PropTypes.array,
   addTodo: PropTypes.func,
-  deleteTodo: PropTypes.fun
+  deleteTodo: PropTypes.func
 }
 
 export default UseSyncExternalStoreComponent

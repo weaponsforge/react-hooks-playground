@@ -1,12 +1,11 @@
 import UseSyncExternalStoreComponent from '@/components/usesyncexternalstore'
-import useTodos from '@/domain/usesyncexternalstore/todostore'
+import useTodos from '@/lib/hooks/usetodo'
 
 function UseSyncExternalStore () {
-  const { todos, addTodo, deleteTodo } = useTodos()
+  const { addTodo, deleteTodo } = useTodos()
 
   return (
     <UseSyncExternalStoreComponent
-      todos={todos}
       addTodo={addTodo}
       deleteTodo={deleteTodo}
     />
