@@ -2,9 +2,15 @@
   "env": {
     "node": true,
     "browser": true,
-    "es6": true
+    "commonjs": true,
+    "es2021": true
   },
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
   "plugins": [
      "eslint-plugin-react", "eslint-plugin-react-hooks"
   ],
@@ -15,7 +21,10 @@
      "semi": ["error", "never"],
      "no-unused-vars": "error",
      "no-undef": "error",
-     "no-trailing-spaces": "error",
-     "no-console": ["error", { "allow": ["error"] }]
+     "no-console": ["error", { "allow": ["error"] }],
+     "react/react-in-jsx-scope": "off",
+     "no-restricted-imports": [
+      "error", { "patterns": ["@/features/*/*"] }
+     ]
   }
 }

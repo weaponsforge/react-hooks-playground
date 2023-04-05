@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types'
 import HeadComponent from '../head'
 
-export default function Page ({ children }) {
+function Page ({ children }) {
   return (
     <div style={{
       height: '100vh',
@@ -11,3 +12,10 @@ export default function Page ({ children }) {
     </div>
   )
 }
+
+Page.propTypes = {
+  children: PropTypes.node
+}
+
+export default Page
+

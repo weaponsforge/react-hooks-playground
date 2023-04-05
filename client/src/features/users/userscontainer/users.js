@@ -58,7 +58,9 @@ function UsersComponent ({
 
 UsersComponent.propTypes = {
   addUser: PropTypes.func,
-  deleteUser: PropTypes.func
+  deleteUser: PropTypes.func,
+  deleteTodo: PropTypes.func,
+  addTodo: PropTypes.func,
 }
 
 export default UsersComponent
