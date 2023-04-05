@@ -25,6 +25,8 @@ The following dependecies are used for this project. Feel free to experiment usi
 1. Clone this repository.<br>
 `https://github.com/weaponsforge/react-hooks-playground.git`
 
+2. Create a `.env` file from the `/client/.env.example` file. Copy it's content when working on localhost.
+
 ## Available Scripts
 
 ### `npm run dev`

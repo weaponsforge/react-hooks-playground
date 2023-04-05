@@ -32,8 +32,9 @@ The following dependecies are used for this project. Feel free to experiment usi
 ### Manual Installation and Usage
 
 1. Navigate to the **/client** directory from the commandline.
-2. Run: `npm run install`
-3. Run: `npm run dev`
+2. Create a `.env` file from the `/client/.env.example` file. Copy it's content when working on localhost.
+3. Run: `npm run install`
+4. Run: `npm run dev`
 
 ### Localhost Development Using Docker
 
