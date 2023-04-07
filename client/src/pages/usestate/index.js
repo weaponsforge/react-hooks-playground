@@ -1,4 +1,4 @@
-import UseStateComponent from '@/components/usestate'
+import { UseStateComponent } from '@/features/usestate'
 
 function UseStateContainer () {
   return (

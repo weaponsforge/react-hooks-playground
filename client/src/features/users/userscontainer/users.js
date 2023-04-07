@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import Page from '@/common/layout/page'
 import Card from '@/common/ui/card'
-import UserListComponent from '@/domain/users/userlist'
-import TodoListComponent from '@/domain/redux/todolist'
+import UserList from '../userlist'
+import { TodoListComponent } from '@/features/redux'
 
 function UsersComponent ({
   addUser,
@@ -34,7 +34,7 @@ function UsersComponent ({
             <Card>
               <Card>
                 <Card>
-                  <UserListComponent deleteUser={deleteUser} />
+                  <UserList deleteUser={deleteUser} />
                 </Card>
               </Card>
             </Card>
@@ -58,7 +58,9 @@ function UsersComponent ({
 
 UsersComponent.propTypes = {
   addUser: PropTypes.func,
-  deleteUser: PropTypes.func
+  deleteUser: PropTypes.func,
+  deleteTodo: PropTypes.func,
+  addTodo: PropTypes.func,
 }
 
 export default UsersComponent

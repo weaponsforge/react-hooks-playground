@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "clean the house",
+    "status": "pending"
+  },
+  {
+    "id": 2,
+    "title": "eat breakfast",
+    "status": "pending"
+  },
+  {
+    "id": 3,
+    "title": "wash clothes",
+    "status": "pending"
+  },
+  {
+    "id": 4,
+    "title": "watch cartoons",
+    "status": "pending"
+  },
+  {
+    "id": 5,
+    "title": "play games",
+    "status": "pending"
+  }
+]

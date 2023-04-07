@@ -1,15 +1,7 @@
-import UseSyncExternalStoreComponent from '@/components/usesyncexternalstore'
-import useTodos from '@/lib/hooks/usetodo'
+import { SyncExternalStore } from '@/features/usesyncexternalstore'
 
 function UseSyncExternalStore () {
-  const { addTodo, deleteTodo } = useTodos()
-
-  return (
-    <UseSyncExternalStoreComponent
-      addTodo={addTodo}
-      deleteTodo={deleteTodo}
-    />
-  )
+  return (<SyncExternalStore />)
 }
 
 export default UseSyncExternalStore

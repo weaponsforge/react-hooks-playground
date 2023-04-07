@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import Page from '@/common/layout/page'
 import Card from '@/common/ui/card'
-import TodoListComponent from '@/domain/redux/todolist'
+import TodoListComponent from '../todolist'
 
 function ReduxComponent ({
   addTodo,

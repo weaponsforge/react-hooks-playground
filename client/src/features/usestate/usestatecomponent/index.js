@@ -2,8 +2,8 @@ import { useState } from 'react'
 import Card from '@/common/ui/card'
 import Page from '@/common/layout/page'
 
-import TodoListComponentV3 from '@/domain/usestate/todolist'
-import TodoListComponentFull from '@/domain/usestate/todolistfull'
+import TodoListComponentV3 from '../components/todolistv3'
+import TodoListComponentFull from '../components/todolistfull'
 
 function UseStateComponent () {
   const [state, setState] = useState([])
