@@ -14,5 +14,9 @@
   {
     "name": "users",
     "link": "/users"
+  },
+  {
+    "name": "useReducer",
+    "link": "/usereducer"
   }
 ]
