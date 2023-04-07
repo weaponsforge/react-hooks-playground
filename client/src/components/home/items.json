@@ -10,5 +10,13 @@
   {
     "name": "useState",
     "link": "/usestate"
+  },
+  {
+    "name": "users",
+    "link": "/users"
+  },
+  {
+    "name": "useReducer",
+    "link": "/usereducer"
   }
 ]

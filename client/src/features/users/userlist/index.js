@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
 
-function UserListComponent ({ deleteUser }) {
+function UserList ({ deleteUser }) {
   const {ids, entities: users } = useSelector(state => state.users)
 
   return (
@@ -20,8 +20,8 @@ function UserListComponent ({ deleteUser }) {
   )
 }
 
-UserListComponent.propTypes = {
+UserList.propTypes = {
   deleteUser: PropTypes.func
 }
 
-export default UserListComponent
+export default UserList

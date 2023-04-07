@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 import Page from '@/common/layout/page'
 import Card from '@/common/ui/card'
-import TodoListComponentV2 from '@/domain/usesyncexternalstore/todolist'
+import TodoListComponentV2 from '../components/todolistv2'
 
-function UseSyncExternalStoreComponent ({
+function SyncExternalStoreComponent ({
   addTodo,
   deleteTodo
 }) {
@@ -49,9 +49,9 @@ function UseSyncExternalStoreComponent ({
   )
 }
 
-UseSyncExternalStoreComponent.propTypes = {
+SyncExternalStoreComponent.propTypes = {
   addTodo: PropTypes.func,
   deleteTodo: PropTypes.func
 }
 
-export default UseSyncExternalStoreComponent
+export default SyncExternalStoreComponent

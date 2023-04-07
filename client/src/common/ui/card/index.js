@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import styles from './Card.module.css'
 
 function Card ({ children }) {
@@ -6,6 +7,10 @@ function Card ({ children }) {
       {children}
     </div>
   )
+}
+
+Card.propTypes = {
+  children: PropTypes.node
 }
 
 export default Card
