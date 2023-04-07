@@ -21,7 +21,7 @@
      "semi": ["error", "never"],
      "no-unused-vars": "error",
      "no-undef": "error",
-     "no-console": ["error", { "allow": ["error"] }],
+     // "no-console": ["error", { "allow": ["error"] }],
      "react/react-in-jsx-scope": "off",
      "no-restricted-imports": [
       "error", { "patterns": ["@/features/*/*"] }
