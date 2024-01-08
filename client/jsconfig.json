@@ -4,7 +4,8 @@
       "@/*": ["./src/*"],
       "@/hooks/*": ["./src/lib/hooks/*"],
       "@/public/*": ["public/*"],
-      "@/store/*": ["./src/lib/store/*"]
+      "@/store/*": ["./src/lib/store/*"],
+      "@/data/*": ["./src/lib/data/*"]
     }
   }
 }

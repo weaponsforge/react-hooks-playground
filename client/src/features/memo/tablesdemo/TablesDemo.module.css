@@ -1,0 +1,46 @@
+.demoContainer {
+  width: 100vw;
+  display: grid;
+  place-content: center;
+}
+
+.container table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  width: 600px;
+  margin-bottom: 32px;
+}
+
+.container th {
+  font-weight: bold;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.container td {
+  width: 150px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.container input {
+  text-align: center;
+}
+
+.container input {
+  border: none;
+  width: 100%;
+}
+
+.container input:focus {
+  outline: none;
+}
+
+.description {
+  padding: 8px;
+}
+
+.subDescription {
+  padding: 16px;
+  font-size: 14px;
+}
