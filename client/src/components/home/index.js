@@ -16,6 +16,7 @@ export default function HomeComponent() {
             <h1 className={inter.className}>
               React Hooks Playground
             </h1>
+            <p>Best viewed with React Profiler</p>
           </div>
 
           {navlinks.map((item, index) => (

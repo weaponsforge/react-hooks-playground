@@ -1,0 +1,12 @@
+[
+  { "id": 0, "name": "razor", "hp": 0, "atk": 0, "def": 0, "crit_rate": 0, "crit_dmg": 0 },
+  { "id": 1, "name": "ei", "hp": 0, "atk": 0, "def": 0, "crit_rate": 0, "crit_dmg": 0 },
+  { "id": 2, "name": "childe", "hp": 0, "atk": 0, "def": 0, "crit_rate": 0, "crit_dmg": 0 },
+  { "id": 3, "name": "ningguang", "hp": 0, "atk": 0, "def": 0, "crit_rate": 0, "crit_dmg": 0 },
+  { "id": 4, "name": "kazuha", "hp": 0, "atk": 0, "def": 0, "crit_rate": 0, "crit_dmg": 0 },
+  { "id": 5, "name": "ayaka", "hp": 0, "atk": 0, "def": 0, "crit_rate": 0, "crit_dmg": 0 },
+  { "id": 6, "name": "xinqui", "hp": 0, "atk": 0, "def": 0, "crit_rate": 0, "crit_dmg": 0 },
+  { "id": 7, "name": "nahida", "hp": 0, "atk": 0, "def": 0, "crit_rate": 0, "crit_dmg": 0 },
+  { "id": 8, "name": "kazuha", "hp": 0, "atk": 0, "def": 0, "crit_rate": 0, "crit_dmg": 0 },
+  { "id": 9, "name": "bennet", "hp": 0, "atk": 0, "def": 0, "crit_rate": 0, "crit_dmg": 0 }
+]

@@ -13,6 +13,12 @@ The following dependecies are used for this project. Feel free to experiment usi
    - node v18.14.2
    - npm v9.5.0
    - > **NOTE:** We will use v18.14.2 for the official production client and server builds but feel free to use other NodeJS versions by setting "engine-strict=false" in the .npmrc file when working on localhost development as needed, but please use v18.14.2 when installing new modules. Do not commit the package.json or package-lock.json files should they change when "engine-strict=false".
+4. React Developer Tools (optional) [[link]](https://react.dev/learn/react-developer-tools)
+   - The React Developer Tools is a web browser extension for debugging React apps.
+   - It's best to view these demos with the React Profiler, one of the tools available in the React Developer Tools for observing the components re-rendering on state updates.
+   - Install for [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+   - Install for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+   - Install for [Edge](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
 
 ### Core Libraries and Frameworks
 
@@ -31,10 +37,18 @@ The following dependecies are used for this project. Feel free to experiment usi
 
 ### Manual Installation and Usage
 
+> It's best to view these demos with the React Profiler, one of the tools available in the React Developer Tools for observing the components re-rendering on state updates.
+
 1. Navigate to the **/client** directory from the commandline.
-2. Create a `.env` file from the `/client/.env.example` file. Copy it's content when working on localhost.
+2. Create a `.env` file from the `/client/.env.example` file. Copy its content when working on localhost.
 3. Run: `npm run install`
 4. Run: `npm run dev`
+5. Open the localhost website on `http://localhost:3000`
+
+### Using the React Profiler
+
+1. Open the React Profiler in the web browser's developer console.
+2. Run the demos and observe the components re-rendering. The Profiler highlights rendered components.
 
 ### Localhost Development Using Docker
 

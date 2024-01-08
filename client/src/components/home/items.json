@@ -18,5 +18,9 @@
   {
     "name": "useReducer",
     "link": "/usereducer"
+  },
+  {
+    "name": "memo",
+    "link": "/memo"
   }
 ]
