@@ -39,7 +39,7 @@ const MemoizedTable = () => {
   return (
     <div className={styles.container}>
       <div className={styles.subDescription}>
-        <h3 style={{ color: 'green' }}>Optimized Table row re-rendering</h3>
+        <h3 style={{ color: 'green' }}>Optimized Table row re-rendering ✔️</h3>
         <ul>
           <li>This table renders the object array data using map().</li>
           <li>On edit, it renders only an &quot;updated&quot; table row using a memoized TableRow component.</li>

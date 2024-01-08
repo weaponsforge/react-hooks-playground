@@ -42,7 +42,7 @@ function FullTable () {
   return (
     <div className={styles.container}>
       <div className={styles.subDescription}>
-        <h3>Full Table re-rendering</h3>
+        <h3>Full Table re-rendering (WARNING!) ❌</h3>
         <ul>
           <li>On edit, this table renders the object array data using map(), rendering the full table.</li>
         </ul>

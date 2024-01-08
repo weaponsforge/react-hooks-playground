@@ -39,7 +39,7 @@ const UnoptimizedTable = () => {
   return (
     <div className={styles.container}>
       <div className={styles.subDescription}>
-        <h3 style={{ color: 'red' }}>Table re-rendering all rows (WARNING!)</h3>
+        <h3 style={{ color: 'red' }}>Table re-rendering all rows (WARNING!) ❌</h3>
         <ul>
           <li>This table renders the object array data using map().</li>
           <li>It&lsquo;s using a memoized TableRow component but</li>
